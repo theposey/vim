@@ -72,8 +72,7 @@ set autochdir
 set list
 hi NonText ctermfg=7 guifg=gray
 
-set directory=~/temp
-set backupdir=~/temp
+set noswapfile
 set undofile
 set undodir=~/temp
 
