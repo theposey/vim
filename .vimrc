@@ -1,21 +1,25 @@
 au GUIEnter * simalt ~x
 
+set nocompatible
+
 " Vundle shenanigans
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-Bundle 'godlygeek/tabular'
-Bundle 'tpope/vim-commentary'
-Bundle 'vim-scripts/a.vim'
-Bundle 'vim-scripts/vis'
-Bundle 'chazy/cscope_maps'
-Bundle 'kien/ctrlp.vim'
-Bundle 'bling/vim-airline'
-Bundle 'majutsushi/tagbar'
-Bundle 'derekwyatt/vim-fswitch'
-Bundle 'nelstrom/vim-visual-star-search'
+Plugin 'gmarik/vundle'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-scripts/a.vim'
+Plugin 'vim-scripts/vis'
+Plugin 'chazy/cscope_maps'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'majutsushi/tagbar'
+Plugin 'derekwyatt/vim-fswitch'
+Plugin 'nelstrom/vim-visual-star-search'
+
+call vundle#end()
 
 set tags=./tags
 
@@ -31,8 +35,6 @@ set nosol
 set noerrorbells
 set t_vb=
 set visualbell
-
-set nocompatible
 
 filetype plugin on
 filetype indent on
